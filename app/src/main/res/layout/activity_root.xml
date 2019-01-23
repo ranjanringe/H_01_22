@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fitbit.sampleandroidoauth2.RootActivity"
+    layout_width="match_parent"
+    layout_height="match_parent"
+    background="#EF7622"
+    orientation="vertical"
+    >
+
+
+    <data>
+
+        <variable
+            name="loading"
+            type="java.lang.Boolean"/>
+
+        <import type="android.view.View"/>
+    </data>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="SunFit"
+            android:textSize="48sp"
+            android:textColor="@color/textOnPrimaryWhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="onLoginClick"
+            android:background="@color/colorSecondary"
+            android:textColor="@color/textOnSecondary"
+            android:text="LOGIN" />
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</layout>
